@@ -57,6 +57,7 @@ Partial Class Form1
         '
         'lnbox
         '
+        Me.lnbox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.lnbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lnbox.Location = New System.Drawing.Point(12, 12)
         Me.lnbox.Name = "lnbox"
@@ -65,6 +66,7 @@ Partial Class Form1
         '
         'fnbox
         '
+        Me.fnbox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.fnbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.fnbox.Location = New System.Drawing.Point(418, 12)
         Me.fnbox.Name = "fnbox"
@@ -73,14 +75,17 @@ Partial Class Form1
         '
         'mibox
         '
+        Me.mibox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.mibox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.mibox.Location = New System.Drawing.Point(824, 12)
+        Me.mibox.MaxLength = 1
         Me.mibox.Name = "mibox"
         Me.mibox.Size = New System.Drawing.Size(29, 29)
         Me.mibox.TabIndex = 2
         '
         'addressbox
         '
+        Me.addressbox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.addressbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.addressbox.Location = New System.Drawing.Point(12, 68)
         Me.addressbox.Name = "addressbox"
@@ -99,6 +104,7 @@ Partial Class Form1
         '
         Me.agebox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.agebox.Location = New System.Drawing.Point(807, 68)
+        Me.agebox.MaxLength = 2
         Me.agebox.Name = "agebox"
         Me.agebox.Size = New System.Drawing.Size(46, 29)
         Me.agebox.TabIndex = 5
