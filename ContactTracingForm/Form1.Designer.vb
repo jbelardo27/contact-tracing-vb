@@ -41,6 +41,18 @@ Partial Class Form1
         Me.question3 = New System.Windows.Forms.Label()
         Me.question4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.cbyes1 = New System.Windows.Forms.CheckBox()
+        Me.cbyes2 = New System.Windows.Forms.CheckBox()
+        Me.cbyes3 = New System.Windows.Forms.CheckBox()
+        Me.cbyes4 = New System.Windows.Forms.CheckBox()
+        Me.cbyes5 = New System.Windows.Forms.CheckBox()
+        Me.cbno1 = New System.Windows.Forms.CheckBox()
+        Me.cbno2 = New System.Windows.Forms.CheckBox()
+        Me.cbno3 = New System.Windows.Forms.CheckBox()
+        Me.cbno4 = New System.Windows.Forms.CheckBox()
+        Me.cbno5 = New System.Windows.Forms.CheckBox()
+        Me.resetbutton = New System.Windows.Forms.Button()
+        Me.submitbutton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lnbox
@@ -221,11 +233,153 @@ Partial Class Form1
         Me.Label1.TabIndex = 18
         Me.Label1.Text = "Did you travel internationally in the past 14 days?"
         '
+        'cbyes1
+        '
+        Me.cbyes1.AutoSize = True
+        Me.cbyes1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbyes1.Location = New System.Drawing.Point(749, 190)
+        Me.cbyes1.Name = "cbyes1"
+        Me.cbyes1.Size = New System.Drawing.Size(52, 25)
+        Me.cbyes1.TabIndex = 19
+        Me.cbyes1.Text = "Yes"
+        Me.cbyes1.UseVisualStyleBackColor = True
+        '
+        'cbyes2
+        '
+        Me.cbyes2.AutoSize = True
+        Me.cbyes2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbyes2.Location = New System.Drawing.Point(749, 230)
+        Me.cbyes2.Name = "cbyes2"
+        Me.cbyes2.Size = New System.Drawing.Size(52, 25)
+        Me.cbyes2.TabIndex = 20
+        Me.cbyes2.Text = "Yes"
+        Me.cbyes2.UseVisualStyleBackColor = True
+        '
+        'cbyes3
+        '
+        Me.cbyes3.AutoSize = True
+        Me.cbyes3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbyes3.Location = New System.Drawing.Point(749, 270)
+        Me.cbyes3.Name = "cbyes3"
+        Me.cbyes3.Size = New System.Drawing.Size(52, 25)
+        Me.cbyes3.TabIndex = 21
+        Me.cbyes3.Text = "Yes"
+        Me.cbyes3.UseVisualStyleBackColor = True
+        '
+        'cbyes4
+        '
+        Me.cbyes4.AutoSize = True
+        Me.cbyes4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbyes4.Location = New System.Drawing.Point(749, 310)
+        Me.cbyes4.Name = "cbyes4"
+        Me.cbyes4.Size = New System.Drawing.Size(52, 25)
+        Me.cbyes4.TabIndex = 22
+        Me.cbyes4.Text = "Yes"
+        Me.cbyes4.UseVisualStyleBackColor = True
+        '
+        'cbyes5
+        '
+        Me.cbyes5.AutoSize = True
+        Me.cbyes5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbyes5.Location = New System.Drawing.Point(749, 350)
+        Me.cbyes5.Name = "cbyes5"
+        Me.cbyes5.Size = New System.Drawing.Size(52, 25)
+        Me.cbyes5.TabIndex = 23
+        Me.cbyes5.Text = "Yes"
+        Me.cbyes5.UseVisualStyleBackColor = True
+        '
+        'cbno1
+        '
+        Me.cbno1.AutoSize = True
+        Me.cbno1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbno1.Location = New System.Drawing.Point(807, 190)
+        Me.cbno1.Name = "cbno1"
+        Me.cbno1.Size = New System.Drawing.Size(50, 25)
+        Me.cbno1.TabIndex = 24
+        Me.cbno1.Text = "No"
+        Me.cbno1.UseVisualStyleBackColor = True
+        '
+        'cbno2
+        '
+        Me.cbno2.AutoSize = True
+        Me.cbno2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbno2.Location = New System.Drawing.Point(807, 230)
+        Me.cbno2.Name = "cbno2"
+        Me.cbno2.Size = New System.Drawing.Size(50, 25)
+        Me.cbno2.TabIndex = 25
+        Me.cbno2.Text = "No"
+        Me.cbno2.UseVisualStyleBackColor = True
+        '
+        'cbno3
+        '
+        Me.cbno3.AutoSize = True
+        Me.cbno3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbno3.Location = New System.Drawing.Point(807, 270)
+        Me.cbno3.Name = "cbno3"
+        Me.cbno3.Size = New System.Drawing.Size(50, 25)
+        Me.cbno3.TabIndex = 26
+        Me.cbno3.Text = "No"
+        Me.cbno3.UseVisualStyleBackColor = True
+        '
+        'cbno4
+        '
+        Me.cbno4.AutoSize = True
+        Me.cbno4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbno4.Location = New System.Drawing.Point(807, 310)
+        Me.cbno4.Name = "cbno4"
+        Me.cbno4.Size = New System.Drawing.Size(50, 25)
+        Me.cbno4.TabIndex = 27
+        Me.cbno4.Text = "No"
+        Me.cbno4.UseVisualStyleBackColor = True
+        '
+        'cbno5
+        '
+        Me.cbno5.AutoSize = True
+        Me.cbno5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbno5.Location = New System.Drawing.Point(807, 350)
+        Me.cbno5.Name = "cbno5"
+        Me.cbno5.Size = New System.Drawing.Size(50, 25)
+        Me.cbno5.TabIndex = 28
+        Me.cbno5.Text = "No"
+        Me.cbno5.UseVisualStyleBackColor = True
+        '
+        'resetbutton
+        '
+        Me.resetbutton.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.resetbutton.Location = New System.Drawing.Point(418, 396)
+        Me.resetbutton.Name = "resetbutton"
+        Me.resetbutton.Size = New System.Drawing.Size(220, 80)
+        Me.resetbutton.TabIndex = 29
+        Me.resetbutton.Text = "Reset"
+        Me.resetbutton.UseVisualStyleBackColor = True
+        '
+        'submitbutton
+        '
+        Me.submitbutton.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.submitbutton.Location = New System.Drawing.Point(677, 396)
+        Me.submitbutton.Name = "submitbutton"
+        Me.submitbutton.Size = New System.Drawing.Size(220, 80)
+        Me.submitbutton.TabIndex = 30
+        Me.submitbutton.Text = "Submit"
+        Me.submitbutton.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(924, 450)
+        Me.ClientSize = New System.Drawing.Size(924, 503)
+        Me.Controls.Add(Me.submitbutton)
+        Me.Controls.Add(Me.resetbutton)
+        Me.Controls.Add(Me.cbno5)
+        Me.Controls.Add(Me.cbno4)
+        Me.Controls.Add(Me.cbno3)
+        Me.Controls.Add(Me.cbno2)
+        Me.Controls.Add(Me.cbno1)
+        Me.Controls.Add(Me.cbyes5)
+        Me.Controls.Add(Me.cbyes4)
+        Me.Controls.Add(Me.cbyes3)
+        Me.Controls.Add(Me.cbyes2)
+        Me.Controls.Add(Me.cbyes1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.question4)
         Me.Controls.Add(Me.question3)
@@ -271,4 +425,16 @@ Partial Class Form1
     Friend WithEvents question3 As Label
     Friend WithEvents question4 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents cbyes1 As CheckBox
+    Friend WithEvents cbyes2 As CheckBox
+    Friend WithEvents cbyes3 As CheckBox
+    Friend WithEvents cbyes4 As CheckBox
+    Friend WithEvents cbyes5 As CheckBox
+    Friend WithEvents cbno1 As CheckBox
+    Friend WithEvents cbno2 As CheckBox
+    Friend WithEvents cbno3 As CheckBox
+    Friend WithEvents cbno4 As CheckBox
+    Friend WithEvents cbno5 As CheckBox
+    Friend WithEvents resetbutton As Button
+    Friend WithEvents submitbutton As Button
 End Class
