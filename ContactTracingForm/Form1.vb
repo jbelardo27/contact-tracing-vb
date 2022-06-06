@@ -1,5 +1,6 @@
 ﻿Public Class Form1
 
+    'checkbutton functions
     Private Sub cbyes1_CheckedChanged(sender As Object, e As EventArgs) Handles cbyes1.CheckedChanged
         If cbyes1.Checked = True Then
             cbno1.CheckState = False
@@ -60,5 +61,27 @@
             cbyes5.CheckState = False
 
         End If
+    End Sub
+
+    'reset button click
+    Private Sub resetbutton_Click(sender As Object, e As EventArgs) Handles resetbutton.Click
+
+        lnbox.Clear()
+        fnbox.Clear()
+        mibox.Clear()
+        addressbox.Clear()
+        agebox.Clear()
+        cnbox.Clear()
+        emailbox.Clear()
+        cbyes1.CheckState = False
+        cbyes2.CheckState = False
+        cbyes3.CheckState = False
+        cbyes4.CheckState = False
+        cbyes5.CheckState = False
+        cbno1.CheckState = False
+        cbno2.CheckState = False
+        cbno3.CheckState = False
+        cbno4.CheckState = False
+        cbno5.CheckState = False
     End Sub
 End Class
