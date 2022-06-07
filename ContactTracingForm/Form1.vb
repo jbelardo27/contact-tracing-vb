@@ -84,4 +84,19 @@
         cbno4.CheckState = False
         cbno5.CheckState = False
     End Sub
+
+    Private Sub submitbutton_Click(sender As Object, e As EventArgs) Handles submitbutton.Click
+        Dim file As System.IO.StreamWriter
+        file = My.Computer.FileSystem.OpenTextFileWriter("E:\vb.net\Contact Tracing Form\records.txt", True)
+        file.WriteLine("Contact Tracing Record")
+        file.WriteLine(lnbox.Text)
+        file.WriteLine(fnbox.Text)
+        file.WriteLine(mibox.Text)
+        file.WriteLine(addressbox.Text)
+        file.WriteLine(agebox.Text)
+        file.WriteLine(cnbox.Text)
+        file.WriteLine(emailbox.Text)
+
+        file.Close()
+    End Sub
 End Class

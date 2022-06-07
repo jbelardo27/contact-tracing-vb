@@ -61,6 +61,7 @@ Partial Class Form1
         Me.lnbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lnbox.Location = New System.Drawing.Point(12, 12)
         Me.lnbox.Name = "lnbox"
+        Me.lnbox.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lnbox.Size = New System.Drawing.Size(400, 29)
         Me.lnbox.TabIndex = 0
         '
@@ -70,6 +71,7 @@ Partial Class Form1
         Me.fnbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.fnbox.Location = New System.Drawing.Point(418, 12)
         Me.fnbox.Name = "fnbox"
+        Me.fnbox.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.fnbox.Size = New System.Drawing.Size(400, 29)
         Me.fnbox.TabIndex = 1
         '
@@ -80,6 +82,7 @@ Partial Class Form1
         Me.mibox.Location = New System.Drawing.Point(824, 12)
         Me.mibox.MaxLength = 1
         Me.mibox.Name = "mibox"
+        Me.mibox.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.mibox.Size = New System.Drawing.Size(29, 29)
         Me.mibox.TabIndex = 2
         '
@@ -89,6 +92,7 @@ Partial Class Form1
         Me.addressbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.addressbox.Location = New System.Drawing.Point(12, 68)
         Me.addressbox.Name = "addressbox"
+        Me.addressbox.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.addressbox.Size = New System.Drawing.Size(789, 29)
         Me.addressbox.TabIndex = 3
         '
@@ -106,6 +110,7 @@ Partial Class Form1
         Me.agebox.Location = New System.Drawing.Point(807, 68)
         Me.agebox.MaxLength = 2
         Me.agebox.Name = "agebox"
+        Me.agebox.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.agebox.Size = New System.Drawing.Size(46, 29)
         Me.agebox.TabIndex = 5
         '
@@ -114,6 +119,7 @@ Partial Class Form1
         Me.emailbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.emailbox.Location = New System.Drawing.Point(297, 124)
         Me.emailbox.Name = "emailbox"
+        Me.emailbox.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.emailbox.Size = New System.Drawing.Size(504, 29)
         Me.emailbox.TabIndex = 6
         '
@@ -406,6 +412,7 @@ Partial Class Form1
         Me.Controls.Add(Me.fnbox)
         Me.Controls.Add(Me.lnbox)
         Me.Name = "Form1"
+        Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Text = "Contact Tracing Form"
         Me.ResumeLayout(False)
         Me.PerformLayout()
