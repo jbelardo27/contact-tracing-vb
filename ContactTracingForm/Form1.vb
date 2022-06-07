@@ -126,8 +126,27 @@
         If cbno5.Checked = True Then
             file.WriteLine("Did not travel internationally in the past 14 days")
         End If
+        If cbyes1.Checked = True Or
+                cbyes2.Checked = True Or
+                cbyes3.Checked = True Or
+                cbyes4.Checked = True Or
+                cbyes5.Checked = True Then
+            file.WriteLine("POSSIBLE DIRECT CONTACT WITH COVID-19 POSITIVE INDIVIDUAL")
+        Else
+            file.WriteLine("NO RECORDED CONTACT WITH COVID=19 POSITIVE INDIVIDUAL")
+        End If
         file.WriteLine("Nothing Follows")
-        file.WriteLine(" ")
+
+            file.WriteLine(" ")
         file.Close()
+        If cbyes1.Checked = True Or
+                cbyes2.Checked = True Or
+                cbyes3.Checked = True Or
+                cbyes4.Checked = True Or
+                cbyes5.Checked = True Then
+            MessageBox.Show("Not eligible to enter and/or stay at this establishment due to possible direct contact with COVID-19 positive individual.")
+        Else
+            MessageBox.Show("Eligible to enter and/or stay at this establishment.")
+        End If
     End Sub
 End Class
