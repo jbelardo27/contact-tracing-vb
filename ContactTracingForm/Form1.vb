@@ -1,5 +1,4 @@
 ﻿Public Class Form1
-
     'checkbutton functions
     Private Sub cbyes1_CheckedChanged(sender As Object, e As EventArgs) Handles cbyes1.CheckedChanged
         If cbyes1.Checked = True Then
@@ -62,7 +61,6 @@
 
         End If
     End Sub
-
     'reset button click
     Private Sub resetbutton_Click(sender As Object, e As EventArgs) Handles resetbutton.Click
 
@@ -86,6 +84,7 @@
     End Sub
 
     Private Sub submitbutton_Click(sender As Object, e As EventArgs) Handles submitbutton.Click
+        'writefile conditions for submit button
         Dim file As System.IO.StreamWriter
         file = My.Computer.FileSystem.OpenTextFileWriter("E:\vb.net\Contact Tracing Form\records.txt", True)
         file.WriteLine("Contact Tracing Record")
@@ -137,8 +136,9 @@
         End If
         file.WriteLine("Nothing Follows")
 
-            file.WriteLine(" ")
+        file.WriteLine(" ")
         file.Close()
+        'messagebox conditions
         If cbyes1.Checked = True Or
                 cbyes2.Checked = True Or
                 cbyes3.Checked = True Or
@@ -148,5 +148,23 @@
         Else
             MessageBox.Show("Eligible to enter and/or stay at this establishment.")
         End If
+        'clear everything after final message box
+        lnbox.Clear()
+        fnbox.Clear()
+        mibox.Clear()
+        addressbox.Clear()
+        agebox.Clear()
+        cnbox.Clear()
+        emailbox.Clear()
+        cbyes1.Checked = False
+        cbyes2.Checked = False
+        cbyes3.Checked = False
+        cbyes4.Checked = False
+        cbyes5.Checked = False
+        cbno1.Checked = False
+        cbno2.Checked = False
+        cbno3.Checked = False
+        cbno4.Checked = False
+        cbno5.Checked = False
     End Sub
 End Class
