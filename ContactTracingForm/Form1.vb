@@ -96,7 +96,38 @@
         file.WriteLine(agebox.Text)
         file.WriteLine(cnbox.Text)
         file.WriteLine(emailbox.Text)
-
+        If cbyes1.Checked = True Then
+            file.WriteLine("Tested Positive in the past 14 days")
+        End If
+        If cbno1.Checked = True Then
+            file.WriteLine("Did not test positive in the past 14 days")
+        End If
+        If cbyes2.Checked = True Then
+            file.WriteLine("At least one individual in household tested positive in the last 14 days")
+        End If
+        If cbno2.Checked = True Then
+            file.WriteLine("No individual in household tested positive in the last 14 days")
+        End If
+        If cbyes3.Checked = True Then
+            file.WriteLine("Had contact with a COVID-19 positive individual in the past 14 days")
+        End If
+        If cbno3.Checked = True Then
+            file.WriteLine("Had no contact with a COVID-19 positive individual in the past 14 days")
+        End If
+        If cbyes4.Checked = True Then
+            file.WriteLine("Traveled outside NCR in the past 14 days")
+        End If
+        If cbno4.Checked = True Then
+            file.WriteLine("Did not travel outside NCR in the past 14 days")
+        End If
+        If cbyes5.Checked = True Then
+            file.WriteLine("Traveled internationally in the past 14 days")
+        End If
+        If cbno5.Checked = True Then
+            file.WriteLine("Did not travel internationally in the past 14 days")
+        End If
+        file.WriteLine("Nothing Follows")
+        file.WriteLine(" ")
         file.Close()
     End Sub
 End Class
