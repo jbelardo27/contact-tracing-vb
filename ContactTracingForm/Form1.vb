@@ -68,8 +68,8 @@
         fnbox.Clear()
         mibox.Clear()
         addressbox.Clear()
-        agebox.Clear()
         cnbox.Clear()
+        agebox.Clear()
         emailbox.Clear()
         cbyes1.CheckState = False
         cbyes2.CheckState = False
@@ -86,14 +86,14 @@
     Private Sub submitbutton_Click(sender As Object, e As EventArgs) Handles submitbutton.Click
         'writefile conditions for submit button
         Dim file As System.IO.StreamWriter
-        file = My.Computer.FileSystem.OpenTextFileWriter("E:\vb.net\Contact Tracing Form\records.txt", True)
+        file = My.Computer.FileSystem.OpenTextFileWriter("E:\vb.net\Contact Tracing Form\ContactTracingForm\Records.txt", True)
         file.WriteLine("Contact Tracing Record")
         file.WriteLine(lnbox.Text)
         file.WriteLine(fnbox.Text)
         file.WriteLine(mibox.Text)
         file.WriteLine(addressbox.Text)
-        file.WriteLine(agebox.Text)
         file.WriteLine(cnbox.Text)
+        file.WriteLine(agebox.Text)
         file.WriteLine(emailbox.Text)
         If cbyes1.Checked = True Then
             file.WriteLine("Tested Positive in the past 14 days")
@@ -153,8 +153,8 @@
         fnbox.Clear()
         mibox.Clear()
         addressbox.Clear()
-        agebox.Clear()
         cnbox.Clear()
+        agebox.Clear()
         emailbox.Clear()
         cbyes1.Checked = False
         cbyes2.Checked = False

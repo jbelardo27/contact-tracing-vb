@@ -26,8 +26,8 @@ Partial Class Form1
         Me.fnbox = New System.Windows.Forms.TextBox()
         Me.mibox = New System.Windows.Forms.TextBox()
         Me.addressbox = New System.Windows.Forms.TextBox()
-        Me.cnbox = New System.Windows.Forms.TextBox()
         Me.agebox = New System.Windows.Forms.TextBox()
+        Me.cnbox = New System.Windows.Forms.TextBox()
         Me.emailbox = New System.Windows.Forms.TextBox()
         Me.lnlabel = New System.Windows.Forms.Label()
         Me.fnlabel = New System.Windows.Forms.Label()
@@ -96,23 +96,24 @@ Partial Class Form1
         Me.addressbox.Size = New System.Drawing.Size(789, 29)
         Me.addressbox.TabIndex = 3
         '
+        'agebox
+        '
+        Me.agebox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.agebox.Location = New System.Drawing.Point(805, 68)
+        Me.agebox.MaxLength = 2
+        Me.agebox.Name = "agebox"
+        Me.agebox.Size = New System.Drawing.Size(47, 29)
+        Me.agebox.TabIndex = 4
+        '
         'cnbox
         '
         Me.cnbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.cnbox.Location = New System.Drawing.Point(12, 124)
+        Me.cnbox.MaxLength = 15
         Me.cnbox.Name = "cnbox"
+        Me.cnbox.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.cnbox.Size = New System.Drawing.Size(279, 29)
-        Me.cnbox.TabIndex = 4
-        '
-        'agebox
-        '
-        Me.agebox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.agebox.Location = New System.Drawing.Point(807, 68)
-        Me.agebox.MaxLength = 2
-        Me.agebox.Name = "agebox"
-        Me.agebox.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.agebox.Size = New System.Drawing.Size(46, 29)
-        Me.agebox.TabIndex = 5
+        Me.cnbox.TabIndex = 5
         '
         'emailbox
         '
@@ -405,8 +406,8 @@ Partial Class Form1
         Me.Controls.Add(Me.fnlabel)
         Me.Controls.Add(Me.lnlabel)
         Me.Controls.Add(Me.emailbox)
-        Me.Controls.Add(Me.agebox)
         Me.Controls.Add(Me.cnbox)
+        Me.Controls.Add(Me.agebox)
         Me.Controls.Add(Me.addressbox)
         Me.Controls.Add(Me.mibox)
         Me.Controls.Add(Me.fnbox)
@@ -423,8 +424,8 @@ Partial Class Form1
     Friend WithEvents fnbox As TextBox
     Friend WithEvents mibox As TextBox
     Friend WithEvents addressbox As TextBox
-    Friend WithEvents cnbox As TextBox
     Friend WithEvents agebox As TextBox
+    Friend WithEvents cnbox As TextBox
     Friend WithEvents emailbox As TextBox
     Friend WithEvents lnlabel As Label
     Friend WithEvents fnlabel As Label
