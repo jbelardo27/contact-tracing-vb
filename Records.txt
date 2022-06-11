@@ -30,3 +30,35 @@ Did not travel internationally in the past 14 days
 NO RECORDED CONTACT WITH COVID=19 POSITIVE INDIVIDUAL
 Nothing Follows
  
+Contact Tracing Record
+BELARDO
+JERIC
+B
+BAGUMBAYAN TAGUIG
+0909009090
+12
+qwertqwett@gmail.com
+Did not test positive in the past 14 days
+No individual in household tested positive in the last 14 days
+Had no contact with a COVID-19 positive individual in the past 14 days
+Did not travel outside NCR in the past 14 days
+Did not travel internationally in the past 14 days
+NO RECORDED CONTACT WITH COVID=19 POSITIVE INDIVIDUAL
+Nothing Follows
+ 
+Contact Tracing Record
+DAWDASDWA
+AWDAWDAWD
+A
+AWDAWDSDWDAWD
+123125123123
+12
+asdawdawdawdawd
+Tested Positive in the past 14 days
+No individual in household tested positive in the last 14 days
+Had no contact with a COVID-19 positive individual in the past 14 days
+Did not travel outside NCR in the past 14 days
+Did not travel internationally in the past 14 days
+POSSIBLE DIRECT CONTACT WITH COVID-19 POSITIVE INDIVIDUAL
+Nothing Follows
+ 
